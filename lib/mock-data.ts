@@ -1,0 +1,88 @@
+export const DASHBOARD_STATS = {
+  activeMatters: 2847,
+  activeMattersTrend: 12.3,
+  globalOffices: 83,
+  jurisdictions: 164,
+  lawyersOnline: 3291,
+  lawyersTrend: 8.7,
+  crossBorderMatters: 412,
+  crossBorderTrend: 23.1,
+  avgResponseTime: "4.2h",
+  responseTrend: -31.5,
+  knowledgeItems: 184200,
+  knowledgeTrend: 15.8,
+};
+
+export const GLOBE_CONNECTIONS = [
+  { from: "New York", to: "London", lat1: 40.71, lng1: -74.01, lat2: 51.51, lng2: -0.13, active: true },
+  { from: "London", to: "Dubai", lat1: 51.51, lng1: -0.13, lat2: 25.2, lng2: 55.27, active: true },
+  { from: "Tokyo", to: "Singapore", lat1: 35.68, lng1: 139.69, lat2: 1.35, lng2: 103.82, active: true },
+  { from: "São Paulo", to: "Frankfurt", lat1: -23.55, lng1: -46.63, lat2: 50.11, lng2: 8.68, active: false },
+  { from: "Sydney", to: "Hong Kong", lat1: -33.87, lng1: 151.21, lat2: 22.32, lng2: 114.17, active: true },
+  { from: "Nairobi", to: "Johannesburg", lat1: -1.29, lng1: 36.82, lat2: -26.2, lng2: 28.04, active: false },
+  { from: "Dubai", to: "Mumbai", lat1: 25.2, lng1: 55.27, lat2: 19.08, lng2: 72.88, active: true },
+  { from: "Berlin", to: "Tokyo", lat1: 52.52, lng1: 13.41, lat2: 35.68, lng2: 139.69, active: false },
+  { from: "Toronto", to: "London", lat1: 43.65, lng1: -79.38, lat2: 51.51, lng2: -0.13, active: true },
+  { from: "Mexico City", to: "Madrid", lat1: 19.43, lng1: -99.13, lat2: 40.42, lng2: -3.7, active: false },
+];
+
+export const OFFICE_LOCATIONS = [
+  { city: "New York", lat: 40.71, lng: -74.01, lawyers: 480, region: "Americas" },
+  { city: "London", lat: 51.51, lng: -0.13, lawyers: 520, region: "EMEA" },
+  { city: "Dubai", lat: 25.2, lng: 55.27, lawyers: 180, region: "EMEA" },
+  { city: "Tokyo", lat: 35.68, lng: 139.69, lawyers: 290, region: "Asia Pacific" },
+  { city: "Singapore", lat: 1.35, lng: 103.82, lawyers: 210, region: "Asia Pacific" },
+  { city: "Frankfurt", lat: 50.11, lng: 8.68, lawyers: 350, region: "EMEA" },
+  { city: "São Paulo", lat: -23.55, lng: -46.63, lawyers: 220, region: "Americas" },
+  { city: "Sydney", lat: -33.87, lng: 151.21, lawyers: 195, region: "Asia Pacific" },
+  { city: "Toronto", lat: 43.65, lng: -79.38, lawyers: 410, region: "Americas" },
+  { city: "Hong Kong", lat: 22.32, lng: 114.17, lawyers: 175, region: "Asia Pacific" },
+  { city: "Nairobi", lat: -1.29, lng: 36.82, lawyers: 85, region: "Africa" },
+  { city: "Johannesburg", lat: -26.2, lng: 28.04, lawyers: 120, region: "Africa" },
+  { city: "Mumbai", lat: 19.08, lng: 72.88, lawyers: 165, region: "Asia Pacific" },
+  { city: "Berlin", lat: 52.52, lng: 13.41, lawyers: 280, region: "EMEA" },
+  { city: "Beijing", lat: 39.9, lng: 116.4, lawyers: 230, region: "Asia Pacific" },
+  { city: "Mexico City", lat: 19.43, lng: -99.13, lawyers: 145, region: "Americas" },
+  { city: "Madrid", lat: 40.42, lng: -3.7, lawyers: 190, region: "EMEA" },
+  { city: "Paris", lat: 48.86, lng: 2.35, lawyers: 310, region: "EMEA" },
+  { city: "Cairo", lat: 30.04, lng: 31.24, lawyers: 95, region: "EMEA" },
+  { city: "Seoul", lat: 37.57, lng: 126.98, lawyers: 170, region: "Asia Pacific" },
+];
+
+export const RECENT_ACTIVITIES = [
+  {
+    id: 1,
+    type: "matter",
+    text: "New cross-border M&A opened: Tokyo ↔ Frankfurt ↔ São Paulo",
+    time: "12 min ago",
+    agent: "cross-matter" as const,
+  },
+  {
+    id: 2,
+    type: "expert",
+    text: "Expert match: Dr. Yuki Tanaka (Tokyo) → Energy M&A",
+    time: "28 min ago",
+    agent: "expert-finder" as const,
+  },
+  {
+    id: 3,
+    type: "regulatory",
+    text: "CRITICAL: EU AI Act enforcement deadline in 14 days",
+    time: "1 hr ago",
+    agent: "regulatory-radar" as const,
+  },
+  {
+    id: 4,
+    type: "cultural",
+    text: "Cultural brief generated: US-South Korea deal collaboration",
+    time: "2 hrs ago",
+    agent: "cultural-bridge" as const,
+  },
+  {
+    id: 5,
+    type: "workload",
+    text: "Follow-the-sun schedule optimized: 4 offices, 12hr window",
+    time: "3 hrs ago",
+    agent: "workload-optimizer" as const,
+  },
+];

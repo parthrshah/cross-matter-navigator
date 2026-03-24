@@ -14,7 +14,7 @@ import { cn } from "@/lib/utils";
 import { useDashboardStore } from "@/lib/store";
 import { AGENTS, AGENT_IDS } from "@/lib/agents";
 
-const ICON_MAP: Record<string, React.ComponentType<{ className?: string }>> = {
+const ICON_MAP: Record<string, React.ComponentType<{ className?: string; style?: React.CSSProperties }>> = {
   Layers,
   Users,
   Shield,

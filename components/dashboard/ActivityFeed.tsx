@@ -5,7 +5,7 @@ import { RECENT_ACTIVITIES } from "@/lib/mock-data";
 import { AGENTS } from "@/lib/agents";
 import { useDashboardStore } from "@/lib/store";
 
-const ICON_MAP: Record<string, React.ComponentType<{ className?: string }>> = {
+const ICON_MAP: Record<string, React.ComponentType<{ className?: string; style?: React.CSSProperties }>> =  {
   matter: Layers,
   expert: Users,
   regulatory: Shield,

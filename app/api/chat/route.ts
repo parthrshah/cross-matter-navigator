@@ -36,7 +36,7 @@ export async function POST(req: Request) {
       // CRITICAL: Convert UIMessage[] to ModelMessage[] — required in AI SDK v6
       messages: await convertToModelMessages(messages),
       temperature: 0.7,
-      maxTokens: 2048,
+      maxOutputTokens: 2048,
     });
 
     return result.toUIMessageStreamResponse();
